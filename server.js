@@ -6,14 +6,14 @@ const app = express();
 
 const users = [];
 
-app.get("/home",function(req,res){
-res.json({message : "Welcome to Node Class "});
-});
+// app.get("/home",function(req,res){
+// res.json({message : "Welcome to Node Class "});
+// });
 
-app.get("/Login",function(req,res){
+    // app.get("/Login",function(req,res){
    
-    res.json({message : "This is Login Page "});
-    });
+    // res.json({message : "This is Login Page "});
+    // });
 
 // Middleware
 app.use(express.json());
