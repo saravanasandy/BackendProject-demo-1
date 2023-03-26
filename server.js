@@ -2,13 +2,15 @@ const  express = require("express");
 const cors = require("cors");
 const app = express();
 const mongodb = require("mongodb");
+const dotenv = require("dotenv").config()
+const mongoClient = mongodb.MongoClient;
 const {ObjectId} = require("mongodb");
 
 
 
-const mongoClient = mongodb.MongoClient
+// console.log(process);
 // const URL = "mongodb://localhost:27017";
-const URL = "mongodb+srv://Saravana:saravana123@cluster0.hqgsl0z.mongodb.net/?retryWrites=true&w=majority";
+const URL = process.env.DB;
 const DB = "batch_41_wd_tamil";
 
 const users = [];
